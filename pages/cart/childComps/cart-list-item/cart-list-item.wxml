@@ -1,0 +1,19 @@
+<!--pages/cart/childComps/cart-list-item/cart-list-item.wxml-->
+<view class="shop-item">
+  <view class="item-selector">
+    <icon type="success" size="24" color="#ff5777" bind:tap="checkToggle" wx:if="{{item.checked ||  checkAll}}"></icon>
+
+    <icon type="success" size="24" color="#ccc" bind:tap="checkToggle" wx:else></icon>
+  </view>
+  <view class="item-img">
+    <image class="img" src="{{item.img}}" mode="widthFix" />
+  </view>
+  <view class="item-info">
+    <view class="item-title">{{item.product.title}}</view>
+    <view class="item-desc">{{item.product.desc}}</view>
+    <view class="info-bottom">
+      <view class="item-price left">¥{{item.product.realPrice}}</view>
+      <view class="item-count right">x{{item.count}}</view>
+    </view>
+  </view>
+</view>

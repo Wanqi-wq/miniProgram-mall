@@ -1,0 +1,6 @@
+
+<view wx:for="{{cartList}}" wx:key="index">
+  <cart-list-item item="{{item}}" bind:checkToggle="checkToggle" checkAll="{{checkAll}}"/>
+</view>
+<cart-bottom-bar checkAll="{{checkAll}}" bind:checkClick="checkToggle" totalPrice="{{totalPrice}}" checkLength="{{checkLength}}" bind:calcClick="calcClick"/>
+

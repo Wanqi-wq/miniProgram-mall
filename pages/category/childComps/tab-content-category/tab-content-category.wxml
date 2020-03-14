@@ -1,0 +1,9 @@
+<!--pages/category/childComps/tab-content-category/tab-content-category.wxml-->
+<view class="tab-content-category">
+  <view class="item" wx:for="{{subcategories.data.list}}" wx:key="index">
+    <a href="{{item.link}}">
+      <image class="item-img" src="{{item.image}}" mode="widthFix"/>
+      <view class="item-text">{{item.title}}</view>
+    </a>
+  </view>
+</view>

@@ -1,0 +1,35 @@
+<!--pages/detail/childComps/detail-shop-info/detail-shop-info.wxml-->
+<view class="shop-info">
+    <view class="shop-top">
+      <image class="img" src="{{shop.logo}}"/>
+      <span class="title">{{shop.name}}</span>
+    </view>
+    <view class="shop-middle">
+      <view class="shop-middle-item shop-middle-left">
+        <view class="info-sells">
+          <view class="sells-count">
+            {{shop.sells | sellCountFilter}}
+          </view>
+          <view class="sells-text">总销量</view>
+        </view>
+        <view class="info-goods">
+          <view class="goods-count">
+            {{shop.goodsCount}}
+          </view>
+          <view class="goods-text">全部宝贝</view>
+        </view>
+      </view>
+      <view class="shop-middle-item shop-middle-right">
+        <table class="table">
+          <view wx:for="{{shop.score}}" wx:key="index">
+            <span class="td">{{item.name}}</span>
+            <span  class="{{item.isBetter ? 'score-better': 'score'}}">{{item.score}}</span>
+            <span  class="{{item.isBetter ? 'better-more': 'better'}}"><span class="span">{{item.isBetter ? '高':'低'}}</span></span>
+          </view>
+        </table>
+      </view>
+    </view>
+    <view class="shop-bottom">
+      <view class="enter-shop">进店逛逛</view>
+    </view>
+  </view>

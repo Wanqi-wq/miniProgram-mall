@@ -1,0 +1,5 @@
+/* pages/detail/childComps/detail-recommend-info/detail-recommend-info.wxss */
+.recommend-info {
+  position:relative;
+  margin-bottom: 116rpx;
+}

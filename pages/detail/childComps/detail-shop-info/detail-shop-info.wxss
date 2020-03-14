@@ -1,0 +1,111 @@
+/* pages/detail/childComps/detail-shop-info/detail-shop-info.wxss */
+.shop-info {
+    padding: 50rpx 16rpx;
+    border-bottom: 10rpx solid #f2f5f8;
+  }
+
+  .shop-top {
+    line-height: 90rpx;
+    /* 让元素垂直中心对齐 */
+    display: flex;
+    align-items: center;
+  }
+
+  .shop-top .img {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+    border: 2rpx solid rgba(0,0,0,.1);
+  }
+
+  .shop-top .title {
+    margin-left: 20rpx;
+    vertical-align: center;
+  }
+
+  .shop-middle {
+    margin-top: 30rpx;
+    display: flex;
+    align-items: center;
+  }
+
+  .shop-middle-item {
+    flex: 1;
+  }
+
+  .shop-middle-left {
+    display: flex;
+    justify-content: space-evenly;
+    color: #333;
+    text-align: center;
+    border-right: 2rpx solid rgba(0,0,0,.1);
+  }
+
+  .sells-count, .goods-count {
+    font-size: 36rpx;
+  }
+
+  .sells-text, .goods-text {
+    margin-top: 20rpx;
+    font-size: 24rpx;
+  }
+
+  .shop-middle-right {
+    margin-left: 80rpx;
+    font-size: 26rpx;
+    color: #333;
+  }
+
+  .shop-middle-right .table {
+    width: 240rpx;
+    margin-left: 60rpx;
+  }
+
+  .shop-middle-right .table .td {
+    display: inline-block;
+    padding: 10rpx 0;
+    width: 120rpx;
+  }
+
+  .shop-middle-right .score {
+    display: inline-block;
+    width: 90rpx;
+    color: #5ea732;
+  }
+
+  .shop-middle-right .score-better {
+    display: inline-block;
+    width: 90rpx;
+    color: #f13e3a;
+  }
+
+  .shop-middle-right .better {
+      display: inline-block;
+  }
+  .shop-middle-right .better .span {
+    background-color: #5ea732;
+    color: #fff;  
+  }
+
+  .shop-middle-right .better-more {
+    display: inline-block;
+  }
+  .shop-middle-right .better-more .span {
+    background-color: #f13e3a;
+  }
+
+  .shop-bottom {
+    text-align: center;
+    margin-top: 20rpx;
+  }
+
+  .enter-shop {
+    display: inline-block;
+    font-size: 20rpx;
+    background-color: #f2f5f8;
+    width: 300rpx;
+    height: 60rpx;
+    text-align: center;
+    line-height: 60rpx;
+    border-radius: 60rpx;
+  }

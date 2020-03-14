@@ -1,0 +1,35 @@
+/* pages/cart/childComps/cart-bottom-bar/cart-bottom-bar.wxss */
+.cart-bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  	height: 80rpx;
+  	background: #eee;
+  	display: flex;
+  	align-items: center;
+  }
+  .cart-bottom-bar {
+  	display: flex;
+  }
+  .check-content {
+  	display: flex;
+  	align-items: center;
+  }
+  .check-button {
+  	margin-left: 20rpx;
+  	margin-right: 10rpx;
+  }
+  .price {
+  	margin-left: 60rpx;
+  	flex:1;
+  	color: 28rpx;
+  }
+  .calculate {
+  	width:180rpx;
+  	background-color: red;
+  	height: 100%;
+  	line-height: 80rpx;
+  	text-align: center;
+  	color:#fff;
+  }

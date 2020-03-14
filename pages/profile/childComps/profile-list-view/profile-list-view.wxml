@@ -1,0 +1,9 @@
+<!--pages/profile/childComps/profile-list-view/profile-list-view.wxml-->
+<view class="list">
+  <view wx:for="{{listData}}" class="item" wx:key="index" >
+    <span class="icon">
+      <image class="img" src="{{item.img}}" mode="widthFix"/>
+    </span>
+    <view class="text">{{item.text}}</view>
+  </view>
+</view>

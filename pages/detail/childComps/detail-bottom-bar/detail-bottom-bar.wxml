@@ -1,0 +1,21 @@
+
+    <view class="bottom-bar">
+      <view class="bar-item bar-left">
+        <view class="item">
+          <image class="icon" src="/assets/images/detail/service.png"/>
+          <span class="text">客服</span>
+        </view>
+        <view class="item">
+          <image class="icon" src="/assets/images/detail/shop.png"/>
+          <span class="text">店铺</span>
+        </view>
+        <view class="item">
+          <image class="icon" src="/assets/images/detail/collect.png"/>
+          <span class="text">收藏</span>
+        </view>
+      </view>
+      <view class="bar-item bar-right">
+        <view class="item cart" bind:tap="addToCart">加入购物车</view>
+        <view class="item buy">购买</view>
+      </view>
+    </view>

@@ -1,0 +1,15 @@
+<!--pages/cart/childComps/cart-bottom-bar/cart-bottom-bar.wxml-->
+<view class="cart-bottom-bar" >
+  <view class="check-content">
+    <icon type="success" class="check-button" size="26" color="#ff5777" bind:tap="checkClick" wx:if="{{checkAll}}"/>
+    <icon type="success" class="check-button" size="26" color="#ccc" bind:tap="checkClick" wx:if="{{!checkAll}}"/>
+    <span>全选</span>	
+  </view>
+  <view class="price">
+    合计：{{tools.toFixed(totalPrice,2)}}
+  </view>
+  <view class="calculate" bind:tap="calcClick">
+    去计算({{checkLength}})
+  </view>
+</view>
+ <wxs src="../../../../utils/util.wxs" module="tools"/>

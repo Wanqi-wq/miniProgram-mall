@@ -1,0 +1,66 @@
+/* pages/detail/childComps/detail-base-info/detail-base-info.wxss */
+.base-info {
+    margin-top: 30rpx;
+    padding: 0 16rpx;
+    color: #999;
+    border-bottom: 10rpx solid #f2f5f8;
+  }
+
+  .info-title {
+    color: #222
+  }
+
+  .info-price {
+    margin-top: 20rpx;
+  }
+
+  .info-price .n-price {
+    font-size: 40rpx;
+    color: #ff5777;
+  }
+
+  .info-price .o-price {
+    font-size: 24rpx;
+    margin-left: 10rpx;
+    text-decoration: line-through;
+  }
+
+  .info-price .discount {
+    font-size: 26rpx;
+    padding: 4rpx 10rpx;
+    color: #fff;
+    background-color: #ff5777;
+    border-radius: 16rpx;
+    margin-left: 10rpx;
+
+    /*让元素上浮一些: 使用相对定位即可*/
+    position: relative;
+    top: -8rpx;
+  }
+
+  .info-other {
+    margin-top: 30rpx;
+    line-height: 60rpx;
+    display: flex;
+    font-size: 25rpx;
+    border-bottom: 4rpx solid rgba(100,100,100,.1);
+    justify-content: space-between;
+  }
+
+  .info-service {
+    display: flex;
+    justify-content: space-between;
+    line-height: 90rpx;
+  }
+
+  .info-service-item .img {
+    width: 28rpx;
+    height: 28rpx;
+    position: relative;
+    top: 4rpx;
+  }
+
+  .info-service-item .name {
+    font-size: 24rpx;
+    color: #333;
+  }

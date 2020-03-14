@@ -1,0 +1,8 @@
+/* pages/cart/cart.wxss */
+.cartList{
+  position: relative;
+  bottom: 80rpx;
+  left: 0;
+  right: 0;
+
+}

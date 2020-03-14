@@ -1,0 +1,11 @@
+<!--pages/detail/detail.wxml-->
+<!-- <detail-nav-bar/> -->
+<w-swiper list="{{topImages}}" />
+<detail-base-info goods="{{goods}}" />
+<detail-shop-info shop="{{shop}}" />
+<detail-goods-info detailInfo="{{detailInfo}}" />
+<detail-param-info paramInfo="{{paramInfo}}" />
+<detail-comment-info commentInfo="{{commentInfo}}" />
+<detail-recommend-info recommendList="{{recommendList}}" />
+<w-back-top isShow="{{isShow}}" bind:tap="ScrollToTop" my-class="position" />
+<detail-bottom-bar bind:myevent="addToCart" />

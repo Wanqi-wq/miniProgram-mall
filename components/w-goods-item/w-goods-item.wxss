@@ -1,0 +1,35 @@
+/* components/w-goods-item/w-goods-item.wxss */
+.goods-item {
+  text-align: center;
+padding-bottom: 85rpx;
+}
+.goods-item image {
+  width:100%;
+  border-radius:10rpx;
+}
+.goods-item .desc-info {
+  position: absolute;
+  bottom: 5rpx;
+  left: 0;
+  right: 0;
+}
+.content .icon {
+  width: 30rpx;
+  height: 30rpx;
+  padding:0 6rpx 0 10rpx;
+  position:relative;
+  top:5rpx;
+}
+.title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 28rpx;
+}
+.price {
+  font-size: 26rpx;
+  color:#ff5777;
+}
+.cfav {
+  font-size: 26rpx;
+}

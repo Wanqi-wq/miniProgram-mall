@@ -1,0 +1,5 @@
+/* components/w-back-top/w-back-top.wxss */
+.img {
+  width: 100rpx;
+  height: 100rpx;
+}

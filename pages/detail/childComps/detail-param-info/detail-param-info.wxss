@@ -1,0 +1,42 @@
+/* pages/detail/childComps/detail-param-info/detail-param-info.wxss */
+.param-info {
+    padding: 40rpx 30rpx;
+    font-size: 28rpx;
+    border-bottom: 10rpx solid #f2f5f8;
+  }
+
+  .param-info {
+    width: 100%;
+  }
+
+  .param-info  .tr {
+    height: 84rpx;
+   
+  }
+
+  .param-info  .tr .td {
+    display:inline-block;
+    border-bottom: 2rpx solid rgba(100,100,100,.1);
+    width: 19%;
+  }
+
+  .info-param-key {
+    /*当value的数据量比较大的时候, 会挤到key,所以给一个固定的宽度*/
+    display: inline-block;
+
+    width: 10%;
+  }
+
+  .info-param {
+    border-top: 2rpx solid rgba(0,0,0,.1);
+  }
+
+  .param-value {
+    display:inline-block;
+    color: #eb4868;
+    width: 80%;
+  }
+
+  .info-img .img {
+    width: 100%;
+  }

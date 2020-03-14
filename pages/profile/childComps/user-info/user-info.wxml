@@ -1,0 +1,18 @@
+<!--pages/profile/childComps/user-info/user-info.wxml-->
+<view class="user-info">
+  <a href="#" class="clear-fix">
+    <view class="left">
+      <image class="img" src="/assets/images/profile/avatar.png" mode="widthFix"/>
+    </view>
+    <view class="middle">
+        <view class="login">登录/注册</view>
+      <view class="phone">
+        <image class="img" src="/assets/images/profile/phone.png" mode="widthFix"/>
+        <span class="user-phone">暂无绑定手机号</span>
+      </view>
+    </view>
+    <view class="right">
+      <image class="img" src="/assets/images/common/arrow-right.png" mode="widthFix"/>
+    </view>
+  </a>
+</view>

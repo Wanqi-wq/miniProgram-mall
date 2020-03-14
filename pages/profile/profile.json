@@ -1,0 +1,7 @@
+{
+  "usingComponents": { 
+    "user-info":"./childComps/user-info/user-info",
+    "profile-list-view": "./childComps/profile-list-view/profile-list-view"
+  },
+  "navigationBarTitleText": "我的信息"
+}

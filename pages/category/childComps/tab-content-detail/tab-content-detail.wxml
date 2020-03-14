@@ -1,0 +1,4 @@
+<!--pages/category/childComps/tab-content-detail/tab-content-detail.wxml-->
+<view class="tab-content-detail">
+<w-goods-item class="good-item" wx:for="{{list}}" wx:key="index" item="{{item}}"/>
+</view>

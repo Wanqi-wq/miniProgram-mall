@@ -1,0 +1,5 @@
+<!-- pages/detail/childComps/detail-recommend-info/detail-recommend-info.wxml -->
+<view class="recommend-info" v-if="Object.keys(recommendList).length !== 0">
+    <view class="info-header">热门推荐</view>
+      <w-goods list="{{recommendList}}"/>
+  </view>

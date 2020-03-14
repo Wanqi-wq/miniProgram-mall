@@ -1,0 +1,20 @@
+<!--pages/detail/childComps/detail-base-info/detail-base-info.wxml-->
+<view wx:if="{{Object.keys(goods).length !== 0}}" class="base-info">
+    <view class="info-title">{{goods.title}}</view>
+    <view class="info-price">
+      <span class="n-price">{{goods.newPrice}}</span>
+      <span class="o-price">{{goods.oldPrice}}</span>
+      <span class="discount">{{goods.discount}}</span>
+    </view>
+    <view class="info-other">
+      <span>{{goods.columns[0]}}</span>
+      <span>{{goods.columns[1]}}</span>
+      <span>{{goods.services[goods.services.length-1].name}}</span>
+    </view>
+    <view class="info-service">
+      <span class="info-service-item" wx:for="{{goods.services}}" wx:key="index">
+        <image class="img" src="{{goods.services[index].icon}}"></image>
+        <span class="name">{{goods.services[index].name}}</span>
+      </span>
+    </view>
+  </view>

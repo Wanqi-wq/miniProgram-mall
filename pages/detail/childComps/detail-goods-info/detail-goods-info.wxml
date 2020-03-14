@@ -1,0 +1,13 @@
+<!--pages/detail/childComps/detail-goods-info/detail-goods-info.wxml-->
+<view  v-if="{{Object.keys(detailInfo).length !== 0}}" class="goods-info">
+    <view class="info-desc clear-fix">
+      <view class="start">
+      </view>
+      <view class="desc">{{detailInfo.desc}}</view>
+      <view class="end"></view>
+    </view>
+    <view class="info-key">{{detailInfo.detailImage[0].key}}</view>
+    <view class="info-list">
+      <image class="img" wx:for="{{detailInfo.detailImage[0].list}}" mode="widthFix" src="{{item}}" wx:key="index"/>
+    </view>
+  </view>

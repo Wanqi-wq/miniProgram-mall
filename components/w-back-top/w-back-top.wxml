@@ -1,0 +1,4 @@
+<!--components/w-back-top/w-back-top.wxml-->
+<view class="my-class" wx:if="{{isShow}}">
+<image class="img" src="/assets/images/common/top.png"/>
+</view>

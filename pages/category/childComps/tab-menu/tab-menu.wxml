@@ -1,0 +1,5 @@
+<!--pages/category/tab-menu/tab-menu.wxml-->
+<view class="tab-menu">
+  <view wx:for="{{categories}}" wx:key="index" class="menu-list-item {{currentIndex === index ? 'active':''}}" bind:tap="handleIndexClick" data-index="{{index}}">{{item.title}}</view>
+</view>
+

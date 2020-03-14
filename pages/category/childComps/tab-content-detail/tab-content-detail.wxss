@@ -1,0 +1,11 @@
+/* pages/category/childComps/tab-content-detail/tab-content-detail.wxss */
+.tab-content-detail {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.tab-content-detail .good-item {
+  position: relative;
+  width: 49%;
+}

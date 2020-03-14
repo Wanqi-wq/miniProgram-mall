@@ -1,0 +1,12 @@
+<view class="category">
+  <scroll-view class="left-scroll" scroll-y>
+    <tab-menu categories="{{categories}}" bind:itemClick="itemClick"/>
+  </scroll-view>
+  
+  <scroll-view class="right-scroll" scroll-y>
+    <tab-content-category subcategories="{{categoryData[currentIndex].subCategories}}"/>
+    <w-tab-control bind:item-click="tabClick" list="{{title}}" wx:if="{{categoryData[currentIndex].categoryDetail[0][currentType].data}}"/>
+    <tab-content-detail list="{{categoryData[currentIndex].categoryDetail[0][currentType].data}}"/>
+  </scroll-view>
+</view>
+

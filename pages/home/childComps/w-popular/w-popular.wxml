@@ -1,0 +1,4 @@
+<!--pages/home/childComps/w-popular/w-polular.wxml-->
+<view class="popular">
+<image src="/assets/images/home/popular_bg.jpg" mode="widthFix"/>
+</view>

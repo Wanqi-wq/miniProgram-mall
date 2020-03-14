@@ -1,0 +1,20 @@
+/* pages/category/tab-menu/tab-menu.wxss */
+.tab-menu {
+    background-color: #f6f6f6;
+    width: 200rpx;
+    box-sizing: border-box;
+  }
+
+  .menu-list-item {
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    font-size: 28rpx;
+  }
+
+  .menu-list-item.active {
+    font-weight: 700;
+    color: #ff5777;
+    background-color: #fff;
+    border-left: 3px solid #ff5777;
+  }

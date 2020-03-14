@@ -1,0 +1,20 @@
+<!--pages/detail/childComps/detail-param-info/detail-param-info.wxml-->
+<view class="param-info" wx:if="{{Object.keys(paramInfo).length !== 0}}">
+    <view class="info-size">
+      <view wx:for="{{paramInfo.sizes}}"  wx:for-item="table" wx:key="index">
+        <view class="tr" wx:for="{{table}}" wx:for-item="tr" wx:for-index="indey" wx:key="indey">
+          <span class="td" wx:for="{{tr}}" wx:for-index="indez" wx:for-item="td" wx:key="indez" >{{td}}</span>
+        </view>
+      </view>
+    </view>
+   
+    <view class="info-param">
+      <view wx:for="{{paramInfo.infos}}" wx:key="index">
+        <span class="info-param-key">{{item.key}}</span>
+        <span class="param-value">{{item.value}}</span>
+      </view>
+    </view>
+    <view class="info-img" wx:if="{{paramInfo.image.length !== 0}}">
+      <image class="img" src="{{paramInfo.image}}" mode="widthFix"/>
+    </view>
+</view>

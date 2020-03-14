@@ -1,0 +1,5 @@
+.position {
+  position: fixed;
+  bottom: 126rpx;
+  right: 10rpx;
+}

@@ -1,0 +1,30 @@
+<!--pages/detail/childComps/detail-comment-info/detail-comment-info.wxml-->
+  <view>
+    <view wx:if="{{Object.keys(commentInfo).length !== 0}}" class="comment-info">
+      <view class="info-header">
+        <view class="header-title">用户评价</view>
+        <view class="header-more">
+          更多
+          <i class="arrow-right"></i>
+        </view>
+      </view>
+      <view class="info-user">
+        <image class="img" src="{{commentInfo.user.avatar}}" />
+        <span class="span">{{commentInfo.user.uname}}</span>
+      </view>
+      <view class="info-detail">
+        <p class="p">{{commentInfo.content}}</p>
+        <view class="info-other">
+          <span class="date">{{commentInfo.created && tools.formatTime(commentInfo.created)}}</span>
+          <span>{{commentInfo.style}}</span>
+        </view>
+        <view class="info-imgs">
+          <image class="img" src="{{item}}" wx:for="{{commentInfo.images}}" wx:key="index"/>
+        </view>
+      </view>
+    </view>
+  </view>
+  <wxs src="../../../../utils/util.wxs" module="tools"/>
+
+  
+
